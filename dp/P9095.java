@@ -2,6 +2,10 @@ package dp;
 
 import java.util.Scanner;
 
+/*
+*   Problem 9095.
+*   1,2,3 더하기
+*/
 public class P9095 {
 
     public static void main(String[] args) {

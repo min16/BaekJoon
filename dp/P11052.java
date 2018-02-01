@@ -3,6 +3,8 @@ package dp;
 import java.util.Scanner;
 
 /*
+     Problem 11052.
+     붕어빵 판매하기
      d[i]는 p[1] + d[i-1] 부터 p[i] + d[0] 값 중 max 값
      ex)
      d[3]은 p[1] + d[2] ~ p[3] + d[0] 중 max 값
