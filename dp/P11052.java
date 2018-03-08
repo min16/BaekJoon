@@ -5,9 +5,6 @@ import java.util.Scanner;
 /*
      Problem 11052.
      붕어빵 판매하기
-     d[i]는 p[1] + d[i-1] 부터 p[i] + d[0] 값 중 max 값
-     ex)
-     d[3]은 p[1] + d[2] ~ p[3] + d[0] 중 max 값
 */
 
 
@@ -22,9 +19,10 @@ public class P11052 {
         }
 
         int[] d = new int[n + 1];
-        for (int i = 1; i <= n; i ++) {
-            for (int j = 1; j <= i; j ++) {
-                d[i] = Math.max(d[i], d[i - j] + p[j]);
+        for (int i = 1; i <= n; i++) {
+            d[i] = p[i];
+            for (int j = 1; j <= i / 2; j ++) {
+                d[i] = Math.max(d[i], d[j] + d[i - j]);
             }
         }
 

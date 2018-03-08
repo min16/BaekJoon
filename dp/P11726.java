@@ -31,4 +31,5 @@ public class P11726 {
         int ways = getWays(n);
         System.out.println(ways);
     }
+
 }
